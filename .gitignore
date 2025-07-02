@@ -1,0 +1,59 @@
+﻿# PORTRAIT MASTER GITIGNORE
+# File e cartelle da escludere dal repository GitHub
+
+# Modelli AI (troppo grandi per GitHub)
+*.safetensors
+*.pth
+*.ckpt
+*.bin
+models/
+checkpoints/
+unet/
+vae/
+clip/
+style_models/
+loras/
+text_encoders/
+
+# Immagini e media generati
+output/
+outputs/
+*.png
+*.jpg
+*.jpeg
+*.mp4
+
+# File di log e temporanei
+*.log
+logs/
+comfyui.log
+tunnel.log
+__pycache__/
+*.pyc
+
+# Configurazioni sensibili
+.env
+config.ini
+secrets.txt
+tokens.txt
+
+# ComfyUI (installato automaticamente)
+ComfyUI/
+custom_nodes/
+
+# Sistema
+.DS_Store
+Desktop.ini
+*~
+
+# Cloudflared
+cloudflared
+cloudflared-linux-amd64
+
+# Includi file importanti
+!install.sh
+!README.md
+!scripts/
+!workflows/
+!requirements.txt
+!.gitignore
